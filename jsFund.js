@@ -90,4 +90,13 @@ function showPrimes(limit){
 console.log(showPrimes(10))
 
 
+function Circle (radius){
+    this.radius = radius
+    this.draw = function (){
+        console.log(draw)
+    }
+}
 
+const newCircle = new Circle(7)
+
+console.log(newCircle)
