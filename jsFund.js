@@ -113,4 +113,14 @@ let personKeys = Object.keys(person)
 
 let entries = Object.entries(person)
 
-console.log(entries)
+// console.log(entries)
+
+
+//copy an object by interating through all its key value pairs 
+
+const personCopy = {}
+
+for (let key in person)
+  personCopy[key] = person[key]
+
+console.log(personCopy)
