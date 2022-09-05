@@ -118,9 +118,13 @@ let entries = Object.entries(person)
 
 //copy an object by interating through all its key value pairs 
 
-const personCopy = {}
+// const personCopy = {}
 
-for (let key in person)
-  personCopy[key] = person[key]
+// for (let key in person)
+//   personCopy[key] = person[key]
+
+//quicker method for doing what is done from lines 121 - 124 (above)
+
+let personCopy = Object.assign({},person)
 
 console.log(personCopy)
