@@ -100,3 +100,17 @@ function Circle (radius){
 const newCircle = new Circle(7)
 
 console.log(newCircle)
+
+
+let person = {
+  name: "Josh",
+  height: "511",
+  favColor: "red",
+  age:"29"
+}
+
+let personKeys = Object.keys(person)
+
+let entries = Object.entries(person)
+
+console.log(entries)
