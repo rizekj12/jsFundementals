@@ -123,8 +123,13 @@ let entries = Object.entries(person)
 // for (let key in person)
 //   personCopy[key] = person[key]
 
-//quicker method for doing what is done from lines 121 - 124 (above)
+//quicker method for cloning an object (what is done from lines 121 - 124) (above)
 
-let personCopy = Object.assign({},person)
+// let personCopy2 = Object.assign({},person)
 
-console.log(personCopy)
+//simplest way to clone an object
+
+let personCopy3 = {...person}
+console.log(personCopy3)
+
+console.log(2+2)
