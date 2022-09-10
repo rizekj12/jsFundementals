@@ -87,7 +87,7 @@ function showPrimes(limit){
   } 
 }
 
-console.log(showPrimes(10))
+// console.log(showPrimes(10))
 
 
 function Circle (radius){
@@ -98,8 +98,6 @@ function Circle (radius){
 }
 
 const newCircle = new Circle(7)
-
-console.log(newCircle)
 
 
 let person = {
@@ -129,7 +127,50 @@ let entries = Object.entries(person)
 
 //simplest way to clone an object
 
-let personCopy3 = {...person}
-console.log(personCopy3)
+// let personCopy3 = {...person}
+// console.log(personCopy3)
 
-console.log(2+2)
+let now = new Date()
+
+// let address1 = {
+//   street: "100 S Reynolds St",
+//   city: "Alexandria",
+//   state: "VA",
+//   zip: 22304
+// }
+
+function showAddress(address){
+  for (let key in address)
+  console.log(key,address[key])
+
+  // console.log(Object.entries(address))
+}
+
+
+
+// showAddress(address1)
+
+
+function createAdressObj(street, city, state, zip){
+return {
+  street,
+  city,
+  state,
+  zip
+}
+}
+
+let joshAdd = createAdressObj("100 S Reynolds St", "Alexandria", "VA",22304)
+
+// console.log(joshAdd)
+
+function createAddressObj2(street,city,state,zip){
+  this.street = street
+  this.city = city
+  this.state = state
+  this.zip = zip 
+}
+
+const joshAdd2 = new createAddressObj2("11 Green St", "New Haven", "VA", 11204)
+
+console.log(joshAdd2)
