@@ -173,4 +173,42 @@ function createAddressObj2(street,city,state,zip){
 
 const joshAdd2 = new createAddressObj2("11 Green St", "New Haven", "VA", 11204)
 
-console.log(joshAdd2)
+// binding this 
+
+const josh3 = {
+  name: "Josh",
+  speak(){
+    console.log(this)
+  }
+}
+
+const speak = josh3.speak.bind(josh3)
+
+
+// josh3.speak()
+
+// console.log(speak)
+
+// speak()
+
+//arrow functions 
+
+const square = number => number * number 
+
+// if there is only one parameter, no need for paratheses, if there is
+// no parameter function must have empty parathesis
+// if body of code is one line and returns a value, you can remove
+// return statements
+
+// filter method 
+
+const employees = [ 
+  {id:1, isActive: true},
+  {id:2, isActive: true},
+  {id:3, isActive: false}
+]
+
+const activeEmps = employees.filter(employee => employee.isActive)
+
+console.log(activeEmps)
+
