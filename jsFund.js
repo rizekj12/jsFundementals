@@ -212,3 +212,6 @@ const activeEmps = employees.filter(employee => employee.isActive)
 
 console.log(activeEmps)
 
+//arrow functions are also used because they do not rebind "this" where
+// regular functions would require you to rebind "this" if its re-
+// defined for some reason inside an object
