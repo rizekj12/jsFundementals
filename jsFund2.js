@@ -1,5 +1,6 @@
 // .map method 
 
+import { Teacher } from './teacher.js'
 
 const colors = ['red', 'green', 'blue']
 
@@ -62,36 +63,22 @@ const { street: st, city , country } = address
 
 //  console.log(oneAndTwo)
 
-// Classes
+let teach1 = new Teacher('Mr.Rizek')
+
+ console.log(teach1)
 
 
-class Person {
-    constructor(name){
-        this.name = name
-    }
-    walk(){
-        console.log('hello there')
-    }
-    
-    }
+ //creating a function that deletes an item from an array
 
-    const person = new Person('Pam')
 
-    // console.log(person.walk())
+ let names = ["josh", "yuna", "matt", "mo"]
 
-    // Inheritance 
 
-    class Teacher extends Person {
-        constructor(name, degree){
-            super(name)
-            this.degree = degree
+function removeItem(array, item){
+  let itemIndex = array.indexOf(item)
+  array.splice(itemIndex,1)
+  return array
+}
 
-        }
-        teach(){
-            console.log("teach123")
-        }
-    }
 
-    const teacher1 = new Teacher('Miyagi', "BS")
-
-    console.log(teacher1.degree)
+console.log(removeItem(names, "yuna"))
